@@ -60,7 +60,6 @@ export class DashboardComponent implements OnInit {
     .subscribe(res=>{
       alert("Employee Deleted")
     })
-    this.getAllEmployee();
   }
 
   onEdit(row : any){
