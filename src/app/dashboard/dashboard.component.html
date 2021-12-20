@@ -1,0 +1,91 @@
+<!--Navbar-->
+<header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Employee Dashboard</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">My profile</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Settings</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+      </div>
+    </div>
+</header>
+
+<!--Add Employee-->
+ <div class="d-grid gap-2 col-6 mx-auto">
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Modal">Add Employee</button>
+ </div>
+ <br>
+
+<!--Table-->
+  <table class="table">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">Employee ID</th>
+        <th scope="col">Employee Name</th>
+        <th scope="col">Email ID</th>
+        <th scope="col">Contact No</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>@mdo</td>
+        <td>9999999</td>
+        <td>464346</td>
+        <td>
+            <button type="button" class="btn btn-primary btn-sm">Edit</button>&nbsp;
+            <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Add Employee Details</h5>
+        </div>
+        <div class="modal-body">
+            
+            <!-- Add Employee Form -->
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                    <label for="InputID" class="form-label">ID</label>
+                    <input type="id" formControlName="id" class="form-control" id="=InputID1">
+                  </div>
+                <div class="mb-3">
+                    <label for="InputName" class="form-label">Name</label>
+                    <input type="name" formControlName="name" class="form-control" id="=InputName1">
+                  </div>
+                <div class="mb-3">
+                  <label for="InputEmail1" class="form-label">Email address</label>
+                  <input type="email" formControlName="email" class="form-control" id="=InputEmail1">
+                </div>
+                <div class="mb-3">
+                  <label for="=InputContact" class="form-label">Contact Number</label>
+                  <input type="contact" formControlName="contact" class="form-control" id="=InputContact1">
+                </div>
+                <div class="mb-3">
+                    <label for="=InputSalary" class="form-label">Saalary</label>
+                    <input type="salary" formControlName="salary" class="form-control" id="=InputSaalary1">
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button"  class="btn btn-danger">Add</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
