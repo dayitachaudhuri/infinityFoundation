@@ -35,15 +35,15 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>@mdo</td>
-        <td>9999999</td>
-        <td>464346</td>
+      <tr *ngFor="let row of employeeData">
+        <th scope="row">{{row.id}}</th>
+        <td>{{row.name}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.contact}}</td>
+        <td>{{row.salary}}</td>
         <td>
-            <button type="button" class="btn btn-primary btn-sm">Edit</button>&nbsp;
-            <button type="button" class="btn btn-secondary btn-sm">Delete</button>
+            <button type="button" (click)="onEdit(row)" class="btn btn-primary btn-sm">Edit</button>&nbsp;
+            <button type="button" (click)="deleteEmployee(row)" class="btn btn-secondary btn-sm">Delete</button>
         </td>
       </tr>
     </tbody>
@@ -77,14 +77,14 @@
                   <input type="contact" formControlName="contact" class="form-control" id="=InputContact1">
                 </div>
                 <div class="mb-3">
-                    <label for="=InputSalary" class="form-label">Saalary</label>
+                    <label for="=InputSalary" class="form-label">Salary</label>
                     <input type="salary" formControlName="salary" class="form-control" id="=InputSaalary1">
                   </div>
               </form>
         </div>
         <div class="modal-footer">
-            <button type="button"  class="btn btn-danger">Add</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button"  (click)="postEmployeeDetails()" class="btn btn-danger">Add</button>
+            <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

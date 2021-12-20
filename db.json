@@ -1,9 +1,18 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id": "1011",
+      "name": "Jonathan Sparks",
+      "email": "abcd@xyz.com",
+      "contact": "9999999999",
+      "salary": "10500"
+    },
+    {
+      "id": "1012",
+      "name": "Nayla D",
+      "email": "abd@gsjji.com",
+      "contact": "4052223",
+      "salary": "25000"
     }
   ],
   "comments": [
