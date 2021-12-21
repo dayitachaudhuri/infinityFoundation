@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Manager Registration Page
 ![1](https://user-images.githubusercontent.com/77076578/146828406-16b2821b-fa26-4916-a569-d3b987a785ad.PNG)
 ### Employee Dashboard
-![3](https://user-images.githubusercontent.com/77076578/146828347-e10833a1-5115-4681-9bd2-4a994063ae95.PNG)
+![4](https://user-images.githubusercontent.com/77076578/146916081-33dfc10b-9e34-451d-962c-0a1d48a65136.PNG)
 
 ## Development server
 
