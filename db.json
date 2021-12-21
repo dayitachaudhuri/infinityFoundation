@@ -15,6 +15,22 @@
       "salary": "25000"
     }
   ],
+  "users": [
+    {
+      "id": "001",
+      "name": "admin",
+      "email": "admin@infinity.com",
+      "contact": "53005300",
+      "password": "admin_pass"
+    },
+    {
+      "name": "Dayita Chaudhuri",
+      "email": "dayitachaudhuri.tech@gmail.com",
+      "contact": "07005485912",
+      "password": "abcd",
+      "id": "TXxamuF"
+    }
+  ],
   "comments": [
     {
       "id": 1,
